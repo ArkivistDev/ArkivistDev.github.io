@@ -1,0 +1,158 @@
+
+
+body{
+    background-color: aliceblue;
+    font-family: Waukegan LDO, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#title{
+    margin: 0px;
+    padding: 5px;
+    font-family: Audiowide;
+    color: silver;
+    font-size: 4vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text{
+    margin: 8px;
+    font-size: 1.25vw;
+}
+
+#header-logo{
+    border-radius: 100%;
+}
+
+img{
+    margin: 15px;
+}
+
+cite > a{
+    display: block;
+    font-family: Blackadder ITC, sans-serif;
+    width: 350px;
+    height: 50px;
+    margin: 10px
+}
+
+#main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body > header{
+    background-color: rgb(83, 136, 182);
+    color: silver;
+}
+
+#nav-ul{
+    display: flex;
+}
+
+#nav-ul > li{
+    padding: 40px;
+    margin: 16px;
+}
+
+ul{
+    margin:0px;
+    list-style:none;
+    text-decoration: none;
+}
+
+li {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+.navbutton{
+    color: rgb(231, 152, 25);
+    text-decoration: none;
+    font-size: 1vw;
+    padding: 8px;
+}
+
+.header-navbutton{
+    color: rgb(231, 152, 25);
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 40px;
+    margin: 10px;
+}
+
+.footer-navbutton{
+    color: rgb(231, 152, 25);
+    text-decoration: none;
+    font-size: 1.5vw;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#articles{
+    width: 70%;
+    margin: auto;
+}
+
+#main-content{
+    display: flex;
+}
+
+#main-content > div{
+    /* width: 90%; */
+    padding-left: 300px;
+}
+
+aside{
+    display: flex;
+    flex-flow: column;
+    padding-left: 1vw;
+}
+
+article{
+    padding-bottom: 70px;
+    width: 50vw;
+}
+
+#image-gallery{
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 100px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+h3{
+    font-size: 2vw;
+    color: silver;
+}
+
+body > footer{
+    background-color:rgb(83, 136, 182);
+    color: silver;
+    padding-bottom: 1.25vh;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#footer-ul{
+    display: flex;
+}
+
+#footer-ul > div > li{
+    margin-left: 12px;
+}
