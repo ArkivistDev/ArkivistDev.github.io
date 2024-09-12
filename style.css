@@ -17,24 +17,20 @@ body{
 }
 
 .text{
-    margin: 8px;
     font-size: 1.25vw;
+    padding: 10px;
+    margin: 15px;
 }
 
 #header-logo{
     border-radius: 100%;
+    filter: opacity(0.8)
 }
 
 img{
-    margin: 15px;
-}
-
-cite > a{
-    display: block;
-    font-family: Blackadder ITC, sans-serif;
-    width: 350px;
-    height: 50px;
-    margin: 10px
+    padding: 8px;
+    height: 100%;
+    /* max-width: 98%; */
 }
 
 #main-header{
@@ -66,14 +62,14 @@ ul{
 li {
     margin: 0;
     padding: 10px;
-    text-align: center;
+    text-align: auto;
   }
 
 .navbutton{
     color: rgb(231, 152, 25);
     text-decoration: none;
-    font-size: 1vw;
-    padding: 8px;
+    font-size: 1.25vw;
+    padding: 0px;
 }
 
 .header-navbutton{
@@ -90,6 +86,7 @@ li {
     font-size: 1.5vw;
     margin-left: 50px;
     margin-right: 50px;
+    padding: 10px;
 }
 
 #articles{
@@ -115,6 +112,8 @@ aside{
 article{
     padding-bottom: 70px;
     width: 50vw;
+    margin: auto;
+    text-align: center;
 }
 
 #image-gallery{
@@ -130,6 +129,11 @@ form{
     text-align: center;
 }
 
+h1{
+    padding: 10px;
+    text-align: center;
+}
+
 h2{
     text-align: center;
     padding: 10px;
@@ -138,6 +142,19 @@ h2{
 h3{
     font-size: 2vw;
     color: silver;
+}
+
+h4{
+    font-size: 2vw;
+    text-align: center;
+}
+
+h5{
+    font-size: 5vw;
+    text-align: start;
+    font-family: Audiowide;
+    color: rgb(231, 152, 25);
+    margin: 50px;
 }
 
 body > footer{
@@ -155,4 +172,149 @@ body > footer{
 
 #footer-ul > div > li{
     margin-left: 12px;
+}
+
+.marquee-container {
+    width: 100%; /* Full width of the container */
+    overflow: hidden;
+    position: relative;
+  }
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap; /* Prevents images from wrapping */
+    /* position: absolute; */
+    left: 50%; /* Start with the content centered horizontally */
+    /* transform: translateX(-50%); Adjust to center the images */
+    animation: marquee 20s linear infinite; /* Continuous scrolling animation */
+  }
+
+.marquee img {
+    width: auto;
+    height: 700px;
+    margin-right: 10px; /* Ensure consistent spacing between images */
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%); /* Start at the centered position */
+    }
+    100% {
+      transform: translateX(-50%); /* Scroll to the left by 100% */
+    }
+  }
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+#radio-button-options{
+    display: flex;
+    flex-flow: column;
+}
+
+.radio-button{
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: rgb(231, 152, 25);
+    color: white;
+    font-family: Waukegan LDO, Helvetica, sans-serif;
+    padding: 10px 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+
+textarea{
+    width: 40vw;
+    height: 60vh;
+}
+
+.textbox{
+    resize: none;
+    overflow: auto;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border: 7px inset silver;
+    transition: border-color 0.2s ease;
+}
+
+.textbox:focus {
+    border-color: rgb(231, 152, 25);
+    box-shadow: 0 0 5px rgb(254, 191, 91);
+    outline: none; /* Remove the default focus outline */
+  }
+
+#message{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    align-content: auto;
+}
+
+.contact-reasons{
+    list-style-type: disc;
+}
+
+#tbh-gif{
+    text-align: center;
+    padding: 3vw;
+}
+
+.blended-image{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    border-radius: 15px;
+    filter: blur(0px) contrast(1.1);
+  }
+
+.arki-site{
+    grid-area: arkisite;
+    margin: 0%;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.copyright{
+    grid-area: copyright;
+    padding-left: 25px;
+}
+
+.socials{
+    grid-area: socials;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "arkisite socials"
+    "copyright socials"
+    ;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+
+#index-logo{
+    width: 100%;
+    padding: 0px;
+    max-height: auto;
+}
+
+#oof{
+    background-color: rgb(83, 136, 182);
 }
